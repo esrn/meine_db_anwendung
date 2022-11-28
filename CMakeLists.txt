@@ -18,4 +18,4 @@ endif(NOT cli11_FOUND)
 
 add_executable( ${PROJECT_NAME} "${CMAKE_CURRENT_SOURCE_DIR}/src/main.cc")
 
-target_link_libraries()
+target_link_libraries( ${PROJECT_NAME} CLI11::CLI11 )
